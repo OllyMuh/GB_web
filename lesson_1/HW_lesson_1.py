@@ -24,3 +24,4 @@ print(repos)
 # сохранение в json файл
 with open('data.txt', 'w') as file:
     json.dump(j_data, file)
+
