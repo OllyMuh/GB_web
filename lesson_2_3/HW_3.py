@@ -103,10 +103,10 @@ def collect(pages):                     # collecting data from the page and savi
 
 
 def show_higher(salary):
-    req = {'$or': [{'max_salary': {'$gte': salary}}, {'min_salary': {'$lte': salary}}]}
+    req = {'$or': [{'max_salary': {'$gte': salary}}, {'min_salary': {'$gte': salary}}]}
     result = vacancy_collection.find(req)
     for doc in result:
         pprint(doc)
 
-# show_higher(400000)
+show_higher(400000)
 
